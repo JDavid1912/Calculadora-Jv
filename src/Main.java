@@ -5,7 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        while (true) {
+        boolean continuar = true ;
+        while (continuar) {
 
 
             System.out.println("Seleccion una operacion");
@@ -19,8 +20,8 @@ public class Main {
             System.out.println("8.CONVERSION CELSIUS A FAHRENHEIT");
             System.out.println("Exit");
 
+            System.out.print("Ingrese la opcion que necesitas");
             int opcion = scanner.nextInt();
-            if (opcion == 9) break;
 
             double num1 = 0, num2 = 0;
             if (opcion >= 1 && opcion <= 5 || opcion == 7) {
