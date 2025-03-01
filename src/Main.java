@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+// se importarón las librerias de java
 public class Main extends JFrame {
     private JTextField Numero1, Numero2, Resultado;
     private JComboBox<String> comboOperaciones;
@@ -11,10 +11,10 @@ public class Main extends JFrame {
 
     public  Main() {
         setTitle("Calculadora Básica 🖩");
-        setSize(500, 300);
+        setSize(600, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(6, 3, 10, 10));
-
+        setLocationRelativeTo(null);
         JLabel etiquetaNumero1 = new JLabel("Número 1:");
         Numero1 = new JTextField();
 
