@@ -1,6 +1,12 @@
-//Joan Infante Velasquez,Santiago Bonilla Alonso,Estiben Davila Niño;Calculator
+//Joan Infante Velasquez,
+//Santiago Bonilla Alonso
+// Estiben Davila Niño
+// Calculator
+
+/// Otro forma sin interfaz grafica ///
 
 import java.util.Scanner ;
+
 public class Main {
     public static void main(String[] args) {
 
