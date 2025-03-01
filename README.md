@@ -29,7 +29,7 @@ Luis Estiben Davila Niño
 
 Se han utilizado ramas en Git para organizar el desarrollo del proyecto. Algunas ramas creadas incluyen:
 
-#main: Contiene la versión estable del proyecto.
+main: Contiene la versión estable del proyecto.
 
 feature/console: Implementación de la calculadora en consola.
 
