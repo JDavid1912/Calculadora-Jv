@@ -1,4 +1,6 @@
 // Importaciones de bibliotecas
+import jdk.dynalink.Operation;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -15,13 +17,16 @@ public class Main extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(6, 3, 10, 10));
         setLocationRelativeTo(null);
+
         JLabel etiquetaNumero1 = new JLabel("Número 1:");
         Numero1 = new JTextField();
+        Numero1.setBackground(Color.LIGHT_GRAY);
 
         JLabel etiquetaNumero2 = new JLabel("Número 2:");
         Numero2 = new JTextField();
-
+        Numero2.setBackground(Color.LIGHT_GRAY);
         JLabel etiquetaOperacion = new JLabel("Operación:");
+
         String[] operaciones = {
                 "Suma", "Resta", "Multiplicación", "División", "Potenciación",
                 "Raíz Cuadrada", "Módulo", "Celsius a Fahrenheit"
@@ -30,7 +35,9 @@ public class Main extends JFrame {
 
         botonCalcular = new JButton("Calcular");
         JLabel etiquetaResultado = new JLabel("Resultado:");
+        botonCalcular.setBackground(Color.LIGHT_GRAY);
         Resultado = new JTextField();
+        Resultado.setBackground(Color.LIGHT_GRAY);
         Resultado.setEditable(false);
 
         add(etiquetaNumero1);
