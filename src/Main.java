@@ -11,8 +11,8 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        boolean continuar = true ;
-        while (continuar) {
+        boolean continuar1 = true ;
+        while (continuar1) {
 
 
             System.out.println("Seleccion una operacion");
