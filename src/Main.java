@@ -72,7 +72,7 @@ public class Main {
 
             System.out.println("Resultado: " + resultado);
         }
-
+        // se cierran las operaciones y se ternima la calculadora
         scanner.close();
         System.out.println("Calculadora finalizada.");
 
