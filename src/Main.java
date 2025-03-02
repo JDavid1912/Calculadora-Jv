@@ -16,15 +16,22 @@ public class Main extends JFrame {
         setSize(600, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(6, 3, 10, 10));
-        setLocationRelativeTo(null);
+        setLocationRelativeTo(null); // Centrar la interface en la pantalla
+        // Se añadió una nuevas fuentes
+        Font Fuente1 = new Font("Agency FB", Font.CENTER_BASELINE, 35 );
+        Font Fuente2 = new Font("Agency FB", Font.PLAIN, 50);
 
         JLabel etiquetaNumero1 = new JLabel("Número 1:");
         Numero1 = new JTextField();
-        Numero1.setBackground(Color.LIGHT_GRAY);
+        Numero1.setBackground(Color.LIGHT_GRAY);// Color de la etiqueta
+        Numero1.setForeground(Color.DARK_GRAY); // Color de la fuente
+        Numero1.setFont(Fuente1);
 
         JLabel etiquetaNumero2 = new JLabel("Número 2:");
         Numero2 = new JTextField();
-        Numero2.setBackground(Color.LIGHT_GRAY);
+        Numero2.setBackground(Color.LIGHT_GRAY); // Color de la etiqueta
+        Numero2.setFont(Fuente1);
+        Numero2.setForeground(Color.DARK_GRAY);
         JLabel etiquetaOperacion = new JLabel("Operación:");
 
         String[] operaciones = {
@@ -36,8 +43,12 @@ public class Main extends JFrame {
         botonCalcular = new JButton("Calcular");
         JLabel etiquetaResultado = new JLabel("Resultado:");
         botonCalcular.setBackground(Color.LIGHT_GRAY);
+        botonCalcular.setFont(Fuente2);
+
         Resultado = new JTextField();
-        Resultado.setBackground(Color.LIGHT_GRAY);
+        Resultado.setBackground(Color.DARK_GRAY); // Color de la etiqueta
+        Resultado.setFont(Fuente1); // Fuente Nueva
+        Resultado.setForeground(Color.WHITE); // Color fuente
         Resultado.setEditable(false);
 
         add(etiquetaNumero1);
